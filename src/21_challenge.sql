@@ -5,4 +5,4 @@ FROM albums AS alb
   INNER JOIN songs AS son
     ON alb.id = son.album_id
 GROUP BY alb.title
-ORDER BY SUM(son.duration_in_seconds) DESC;
+ORDER BY `Duração` DESC;
